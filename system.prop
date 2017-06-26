@@ -70,7 +70,11 @@ debug.mdpcomp.logs=0
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
 debug.enable.sglscale=1
-ro.opengles.version=196609
+ro.opengles.version=196610
+persist.hwc.enable_vds=1
+persist.hwc.ptor.enable=true		
+persist.mdpcomp_perfhint=50		
+persist.metadata_dynfps.disable=true
 ro.sf.lcd_density=480
 
 # Data
@@ -150,12 +154,6 @@ persist.cne.logging.qxdm=0
 
 # HWUI
 ro.hwui.texture_cache_size=40
-
-# set max background services
-ro.config.max_starting_bg=8
-
-#Enable B service adj transition by default
-ro.sys.fw.bservice_enable=true
 
 # Media
 mm.enable.smoothstreaming=false
